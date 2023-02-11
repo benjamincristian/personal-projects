@@ -1,0 +1,229 @@
+/*CSS*/
+
+html {
+  background-color: #00204a;
+  font-family: "Courier New", monospace;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+
+.to-do-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 55rem;
+  min-height: 30rem;
+  padding-bottom: 3rem;
+  border-radius: 7px;
+  background-color: #005792;
+}
+
+.to-do-list-title {
+  color: #fdb44b;
+  opacity: 90%;
+  text-align: center;
+  font-size: 40px;
+}
+
+#newItem {
+  height: 2rem;
+  width: 30rem;
+  border: none;
+  border-radius: 7px;
+  background-color: #f7efe5;
+  opacity: 50%;
+  padding-left: 7rem;
+  color: #00204a;
+}
+
+#newItem::placeholder {
+  color: #00204a;
+  text-align: left;
+}
+
+#newItem:focus {
+  outline: none;
+  opacity: 100%;
+}
+
+
+/*.addItem {
+  display: block;
+  margin-top: 10px;
+  height: 2rem;
+  border-radius: 7px;
+  border: none;
+  background-color: #f7efe5;
+  color: #674188;
+  width: 100%;
+}
+
+.addItem:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.24);
+}
+
+.addItem:active {
+  background-color: #c3acd0;
+  color: #f7efe5;
+  box-shadow: none;
+}*/
+
+.addItem {
+  display: flex;
+  border: none;
+  background: transparent;
+  border: none !important;
+  font-size:0;
+  background-color: none;
+}
+
+
+.itemList {
+  margin-top: 2rem;
+  width: 41rem;
+  min-height: 15rem;
+  border: 1px solid #fffbf5;
+  border-radius: 7px;
+  padding: 1rem;
+  background-color: #00bbf0;
+}
+
+.item {
+  color: #f7efe5;
+  padding: 10px 0px;
+}
+
+.itemName {
+  width: 20rem;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.itemDelete {
+  position: relative;
+  left: 17rem;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+.itemDelete:hover {
+  cursor: pointer;
+  background-color: red;
+}
+
+.weekDays {
+  width: 46rem;
+  min-height: 30rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.weekday {
+  height: 20rem;
+  background-color: #fdb44b;
+  width: 30%;
+  border-radius: 7px;
+  border: 1px solid #000;
+  flex-grow: 1;
+  box-sizing: border-box;
+  margin: 0 5px 10px;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#monday::before {
+  color: #00204a;
+  content: "Monday";
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+#tuesday::before {
+  color: #00204a;
+  content: "Tuesday";
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+#wednesday::before {
+  color: #00204a;
+  content: "Wednesday";
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+#thursday::before {
+  color: #00204a;
+  content: "Thursday";
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+#friday::before {
+  color: #00204a;
+  content: "Friday";
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+#saturday::before {
+  color: #00204a;
+  content: "Saturday";
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+#sunday::before {
+  color: #00204a;
+  content: "Sunday";
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+#sunday {
+  grid-column-end: 3;
+}
+
+#thursday, #friday {
+	width: 40%;
+}
+
+.daySelect {
+  height: 2rem;
+  border-radius: 7px;
+  background-color: #f7efe5;
+  padding-left: 6px;
+  color: #00204a;
+}
+
+.daySelect:focus {
+  outline: none;
+}
+
+.miniLI {
+  color: #00204a;
+  text-align: left;
+}
